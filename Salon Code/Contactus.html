@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8" />
+    <title> Contact Us - Cheraz Salon and Spa </title>
+    <link rel="stylesheet" href="contactus_style.css"> 
+    <!-- Script for the carousel -->
+   
+    <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+    
+    <link rel="icon" type="Image/jpg" href="Images/logo2.png"> <!-- this is the icon the browser ribbon-->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <!-- This will prefetch content from google web fonts website -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    
+
+
+</head>
+<body>
+    
+    <!--<div><audio src="background_audio/Summer-hit-soft-techno-music.mp3" autoplay>
+        <p>If you are reading this it is because your browser doesnt support the audio element.</p></div>-->
+    
+    <div id="body_wrapper">
+    <header>
+    <nav id="menu">
+        <ul>
+            <li><a class="upmenu" href="index.html">Home</a></li>
+            <li class="drop">
+                <a class="upmenu" href="#">Services & Rates</a>
+                
+                <div class="dropdownContain">
+                    <div class="dropOut">
+                        <div class="triangle"></div>
+                        <ul>
+                            <a class="downmenu" href="Hair_Services.html"><li style="list-style:none;">Hair</li></a>
+                            <a class="downmenu" href="Skin_Services.html"><li style="list-style:none;">Skin</li></a>
+                            <a class="downmenu" href="Nails_Services.html"><li style="list-style:none;">Nails</li></a>
+                            <a class="downmenu" href="Massage_Services.html"><li style="list-style:none;">Massage</li></a>
+                        </ul>
+                    </div>
+                </div>
+            
+            </li>
+            <li><a class="upmenu" href="Giftcard.html">Gift Certificates</a></li>
+            <li><a class="upmenu" href="About.html">About</a></li>
+            <li><a class="upmenu" href="#">Contact Us</a></li>
+        </ul>    
+    </nav>
+    </header>
+    <div id="second_half">
+    <div class="logo"></div>
+    <!--here-->
+    <div id="top_address">           
+       <header> 
+        <h1>Cheraz Salon & Spa</h1> 
+       </header>
+        <p>7330 Fair Oaks Blvd. Suite 1</p>
+        <p> Sacramento, CA 95608</p>
+        <p>(916) 550-2275</p>
+        <p>email: cherazsalonandspa@gmail.com</p>
+    </div>
+
+    <!--<div> 
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:30vw;width:70%;box-shadow: 0 5px 10px;margin-right:15%; margin-left:15%;margin-bottom:30px;'><div id='gmap_canvas' style='height:30vw;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">                                   embed google maps                           </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(38.642159,-121.32090649999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.642159,-121.32090649999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Cheraz Salon and Spa</strong><br>7330 Fair Oaks Blvd. Suite 1 Sacramento, CA 95608<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    </div>-->
+    <div style="text-align:center; margin-bottom: 25px;">
+    <iframe  style="box-shadow: 0 5px 10px; "src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.6423458250147!2d-121.32975468498441!3d38.634108170026295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809adc209b083f8b%3A0x821ba232e807295f!2s7330+Fair+Oaks+Blvd%2C+Carmichael%2C+CA+95608!5e0!3m2!1sen!2sus!4v1467220848740" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div id="bottom_section">
+        
+        <div id="contact_forms">       
+            <form method="POST" name="contactform" action="contact-form-handler.php"> 
+            <p>
+            <label for='name'>Your Name:</label> <br>
+            <input type="text" name="name">
+            </p>
+            <p>
+            <label for='email'>Email Address:</label> <br>
+            <input type="text" name="email"> <br>
+            </p>
+            <p>
+            <label for='message'>Message:</label> <br>
+            <textarea name="message"></textarea>
+            </p>
+            <input type="submit" value="Submit"><br>
+            </form>
+    <script language="JavaScript">
+    // Code for validating the form
+    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    // for details
+        var frmvalidator  = new Validator("contactform");
+        frmvalidator.addValidation("name","req","Please provide your name"); 
+        frmvalidator.addValidation("email","req","Please provide your email"); 
+        frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+    </script>
+    
+        </div>
+
+
+        <div id="bckground">
+          
+        </div> 
+    </div>
+    
+    </div>
+    <div id="social_links">
+        <a href="http://www.instagram.com" target="_blank"><img src="Images/instagram.png"/></a>
+        <a href="https://www.facebook.com/cherazsalonandspa/" target="_blank"><img src="Images/facebook.png"/></a>
+        <!--<a href="http://www.pinterest.com" target="_blank"><img src="Images/pinterest.png"/></a>
+        <a href="http://www.twitter.com" target="_blank"><img src="Images/twitter.png"/></a>-->
+    </div>
+    <div id="footer_div">
+    <footer id="the_footer">
+        2016 Cheraz Salon & Spa. All rights reserved.
+    </footer>
+    </div>      
+    
+    </div>      
+</body>
+</html>
