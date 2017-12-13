@@ -1,4 +1,4 @@
-# SampleSite (Salon Website)
+#Beatuy Salong Website
 
 This project contains the source code for a now retired website that I developed for a beauty salon when I was first starting to learn web development in the Summer of 2016.
 
