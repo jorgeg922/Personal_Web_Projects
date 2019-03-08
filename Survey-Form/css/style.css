@@ -1,0 +1,91 @@
+html, body {
+  text-align: center;
+  background-color: #0099cc;
+  'Raleway', Helvetica, sans-serif;
+}
+#outer-container{
+  width: 75%;
+  margin: 0 auto;
+  /*border: solid 5px green;*/
+  background-color: white;
+  padding: 10px;
+}
+.left-container {
+  /*border: solid 5px red;*/
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  margin: 10px;
+}
+
+.right-container {
+  /*border: solid 5px blue;*/
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  margin: 10px;
+}
+
+label{
+  font-size: 20px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+select{
+  height: 30px;
+}
+
+.fields-set{
+  vertical-align: top;
+}
+
+#comments{
+  width: 80%;
+  height: 150px;
+}
+
+#submit{
+  height: 40px;
+  width: 100px;
+  background-color:#0066ff;
+  color: white;
+  font-size: 1em;
+}
+
+.input-fields{
+  width: 40%;
+  height: 25px;
+}
+
+ .select-cont{
+    vertical-align: top;
+  }
+
+@media screen and (max-width: 833px){
+  .input-fields{
+    width: 80%;
+  }
+  select{
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 520px){
+  .left-container{
+    width:100%;
+    text-align: left;
+  }
+  .right-container{
+    width: 90%;
+    text-align: left;
+  }
+  #comments{
+    height: 50px;
+  }
+}
