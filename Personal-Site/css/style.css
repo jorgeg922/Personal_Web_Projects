@@ -1,0 +1,169 @@
+html, body{
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+*{
+   margin:0;
+   padding:0;
+}
+
+#welcome-section{
+ 
+  top: 0;
+  display: block;
+  margin:0;
+  padding: 0;
+  height: 100vh; 
+}
+
+#welcome-content{
+  padding-top: 45vh;
+}
+
+#welcome-content h1{
+  letter-spacing: 3px;
+}
+
+#welcome-content p{
+  color: #ff7e05; 
+}
+
+nav{
+  overflow: hidden;
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin:0;
+}
+
+nav ul{
+  display: flex;
+  margin:0;
+  padding:0;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav ul li{
+  list-style-type: none;
+  font-weight: bold;
+
+ }
+
+nav ul li a{
+  text-decoration: none;
+  line-height: 3em;
+  padding: 1em 2em;
+  color: #ff7e05;
+}
+
+nav ul li a:hover{
+  color:#1a16ff;
+}
+
+
+#projects{
+  /*border: solid blue;*/
+  padding-top: 30px;
+ 
+}
+
+#projects #projects-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#projects-container{
+  /*border: solid green;*/
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.project-tile{
+  /*border: solid green;*/
+  display: flex;
+  flex: 1 0 25%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  background-color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white; 
+  font-size: 2em;
+  height: 220px; 
+}
+
+.project-tile p{
+  /*border: solid red;*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+#projects-container a:hover{
+  animation-name: text-growth;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes text-growth{
+  0%{font-size: 2em
+     letter-spacing: normal;}
+  100%{font-size: 2.5em;
+      letter-spacing: 3px;}
+}
+#contact-me{
+  /*border: solid pink;*/
+  display: block;
+  margin:0;
+  padding: 0;
+  height: 100vh; 
+}
+
+#contact-me p{
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#contact-wrap{
+  /*border: solid blue;*/
+  padding-top: 10vh;
+  margin-bottom: 30px;
+}
+.contact-details{
+  /*border: solid red;*/
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.contact-details a{
+  /*border: solid blue;*/
+  margin: auto 0;
+  line-height: 150px;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width:1200px){
+  #projects-container{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .project-tile{
+    width: 250px; 
+  }
+}
